@@ -3,13 +3,11 @@
 #   - By: Klassh -
 #   A timer to run on the bottom of the terminal
 #------------------------------------------------------------------------------
-
-# import time and other dependancies
 import sys
 import time
 
-def countDown(t):
-    t = t * 60
+def pomo(minutes):
+    t = minutes * 60
     while t:
         mins, secs = divmod(t, 60)
         timer = '{:02d}:{:02d}'.format(mins, secs)
@@ -17,9 +15,12 @@ def countDown(t):
         time.sleep(1)
         t -= 1
 
+#------------------------------------------------------------------------------
+#   - Init -
+#------------------------------------------------------------------------------
 if len(sys.argv) > 1:
     
     t = sys.argv[1]
 else:
     t = 25
-countDown(int(t))
+pomo(int(t))
