@@ -1,0 +1,6 @@
+#!/bin/bash
+# Script to run "pomo" system wide
+# Ensure path is in PATH, and chmod 755 pomo
+
+# Change location to local machine
+python3 ~/Projects/Pomo/pomo.py $1
