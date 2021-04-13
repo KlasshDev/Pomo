@@ -2,4 +2,4 @@
 # Simple bash script to go in conjunction with "pomo" bash script to run in 
 # a tmux pane, resized to 1
 
-tmux split-window -v pomo \; resize-pane -y 1 \; select-pane -t 0
+tmux split-window -v pomo $1 \; resize-pane -y 1 \; select-pane -t 0
